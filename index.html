@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Vue</title>
+  <style>
+  #app {
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h2>{{title}}</h2>
+  </div>
+  <script src="./js/compile.js"></script>
+  <script src="./js/index.js"></script>
+  <script>
+  var vm = new SelfVue({
+    el: '#app',
+    data: {
+      title: 'hello world'
+    }
+  })
+  vm.data.title
+  </script>
+</body>
+</html>
